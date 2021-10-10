@@ -1,0 +1,9 @@
+version: '3'
+services:
+  golang:
+    restart: "no"
+    build: 
+      context: .
+      dockerfile: Dockerfile.golang
+    volumes:
+      - ./:/usr/local/src
