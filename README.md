@@ -1,3 +1,3 @@
 # dockerstuff
 
-random list of containers that may be useful eventually
+random list of development containers that may be useful eventually
