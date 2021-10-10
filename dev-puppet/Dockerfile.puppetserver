@@ -1,0 +1,15 @@
+# puppetserver container
+
+FROM amazonlinux:latest
+
+RUN yum update -y
+RUN yum upgrade -y
+RUN rpm -Uvh https://yum.puppet.com/puppet7/puppet7-release-el-7.noarch.rpm
+RUN yum install puppetserver.noarch -y
+RUN yum install vim -y
+
+ENV PATH=/opt/puppetlabs/bin:$PATH
+
+WORKDIR /etc/puppetlabs/code/environments/production
+
+CMD ["vi"]
