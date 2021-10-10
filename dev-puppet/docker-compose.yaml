@@ -1,0 +1,16 @@
+version: '3'
+services:
+  puppetserver:
+    restart: "no"
+    build:
+      context: .
+      dockerfile: Dockerfile.puppetserver
+    ports:
+      - 8041:8041
+    volumes:
+      - ./:/etc/puppetlabs/code/environments/production
+  puppet-agent:
+    restart: "no"
+    build:
+      context: .
+      dockerfile: Dockerfile.puppet-agent
