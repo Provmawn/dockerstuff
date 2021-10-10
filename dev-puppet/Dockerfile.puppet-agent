@@ -10,4 +10,5 @@ RUN yum install puppet-agent
 
 ENV PATH=/opt/puppetlabs/bin:$PATH
 
-CMD ["vi"]
+# need to figure out how to keep this container running
+#CMD ["vi"]
