@@ -12,4 +12,5 @@ ENV PATH=/opt/puppetlabs/bin:$PATH
 
 WORKDIR /etc/puppetlabs/code/environments/production
 
-CMD ["vi"]
+#need to figure out how to keep this container running
+#CMD ["vi"]
