@@ -5,8 +5,10 @@ some basic containers to do practice puppet
 `docker-compose up --build`
 and bam, master-agent setup to play with
 
-## stuff that actually works:
+## useful stuff that actually works:
 `docker build -f Dockerfile.puppetserver -t dev-puppetserver .`
 
-`docker run -it dev-puppetserver bash`
+`docker run -it --rm -v $(pwd):$(pwd) -w $(pwd) dev-puppetserver bash`
+
+`for i in *.pp; do puppet parser validate $i; done`
 
