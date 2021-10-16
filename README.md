@@ -1,3 +1,3 @@
 # dockerstuff
 
-random list of development containers that may be useful eventually
+docker containers that start from an amzon linux 2 image
